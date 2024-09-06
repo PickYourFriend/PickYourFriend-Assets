@@ -1,0 +1,200 @@
+{
+  "m_Shader": {
+    "m_FileID": 1,
+    "m_PathID": 8721262973060810334,
+    "Name": "miHoYo/Effects/SpiritWolf",
+    "IsNull": false
+  },
+  "m_SavedProperties": {
+    "m_TexEnvs": {
+      "_DissolveTex": {
+        "m_Texture": {
+          "m_FileID": 2,
+          "m_PathID": -615429205556440902,
+          "Name": "Eff_Noise_13_RGB",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 2.0,
+          "Y": 0.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_MainTex": {
+        "m_Texture": {
+          "m_FileID": 3,
+          "m_PathID": -4189956998220499190,
+          "Name": "SkillObj_Neuvillette_Wing_Tex_Diffuse",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_NoiseTex": {
+        "m_Texture": {
+          "m_FileID": 4,
+          "m_PathID": -1074531796840440386,
+          "Name": "Eff_Noise_08",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 2.0,
+          "Y": 2.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_NoiseTex02": {
+        "m_Texture": {
+          "m_FileID": 4,
+          "m_PathID": -1074531796840440386,
+          "Name": "Eff_Noise_08",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 4.0,
+          "Y": 4.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_NoiseTex03": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0,
+          "Name": "",
+          "IsNull": true
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_PatternTexInUV2": {
+        "m_Texture": {
+          "m_FileID": 5,
+          "m_PathID": 7592875065740236911,
+          "Name": "SkillObj_Neuvillette_Wing_Tex_Mask",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      }
+    },
+    "m_Ints": null,
+    "m_Floats": {
+      "SkipMotionVelocity": 0.0,
+      "_Alpha": 1.0,
+      "_BlendOP": 0.0,
+      "_Cull": 0.0,
+      "_DissolveTex_ClampU": 0.0,
+      "_DissolveTex_ClampV": 0.0,
+      "_DissolveTex_FlipU": 0.0,
+      "_DissolveTex_FlipV": 0.0,
+      "_DissolveTex_SwapUV": 0.0,
+      "_DissolveValue": 0.49,
+      "_DissoveDirectionUvMode": 0.0,
+      "_DstBlendMode": 10.0,
+      "_EdgeWidth": 0.05,
+      "_EnableDissoveDirection": 1.0,
+      "_EnableFlipDirection": 1.0,
+      "_FresnelPower": 1.0,
+      "_FresnelScale": 0.0,
+      "_InvAutoExposure": 0.0,
+      "_MHYZBias": 0.0,
+      "_MotionVectorsAlphaCutoff": 0.1,
+      "_NoisOffset": 0.0,
+      "_Noise02Multiplier": 1.0,
+      "_NoiseMultiplier": 1.0,
+      "_NoiseTex02_U_Speed": 1.0,
+      "_NoiseTex02_V_Speed": 1.0,
+      "_NoiseTex03_U_Speed": 1.0,
+      "_NoiseTex03_V_Speed": 1.0,
+      "_NoiseTx_U_Speed": 0.5,
+      "_NoiseTx_V_Speed": 0.5,
+      "_Opacity": 0.0,
+      "_PolygonOffsetFactor": 0.0,
+      "_PolygonOffsetUnit": 0.0,
+      "_SkipTaa": 1.0,
+      "_SrcBlendMode": 5.0,
+      "_UseDissolve": 1.0,
+      "_UseHardEdge": 1.0,
+      "_ZwriteToggle": 0.0
+    },
+    "m_Colors": {
+      "_DayColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_DissolveChannelSwitch": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "_EyeColor": {
+        "r": 0.31617647,
+        "g": 0.6321502,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "_FresnelColor": {
+        "r": 0.8617643,
+        "g": 1.8174328,
+        "b": 2.9300017,
+        "a": 1.0
+      },
+      "_HardEdgeColor": {
+        "r": 1.6911767,
+        "g": 3.2200801,
+        "b": 4.9999995,
+        "a": 0.0
+      },
+      "_MainColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "_Noise03Color": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+      },
+      "_PatternColor": {
+        "r": 1.2941177,
+        "g": 2.5444164,
+        "b": 4.0,
+        "a": 0.0
+      }
+    }
+  },
+  "m_Name": "SkillObj_Neuvillette_Wing_Hair_Mat",
+  "Name": "SkillObj_Neuvillette_Wing_Hair_Mat"
+}
