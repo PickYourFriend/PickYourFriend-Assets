@@ -15,6 +15,19 @@ bl_info = {
 
 import bpy
 
+def batch_rename_bones():
+    # Ensure we are in Pose Mode and have an Armature selected
+    if bpy.context.object and bpy.context.object.type == 'ARMATURE':
+        bpy.ops.object.mode_set(mode='EDIT')
+        
+        armature = bpy.context.object
+        for bone in armature.data.edit_bones:
+            # Replace '+' with a blank space in the bone name
+            if '+' in bone.name:
+                bone.name = bone.name.replace('+', '')
+        
+        bpy.ops.object.mode_set(mode='OBJECT')
+
 def rename_bones(context):
     obj = context.object
 
@@ -222,6 +235,7 @@ class RenameBonesOperator(bpy.types.Operator):
 
     def execute(self, context):
         rename_bones(context)
+        batch_rename_bones()
         return {'FINISHED'}
 
 class ShapeKeyManagerOperator(bpy.types.Operator):
