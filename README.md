@@ -5,7 +5,7 @@ Alot of this was just cause of me being bored. Honestly just dont question it.
 The Scripts inside Stuff arent really prefect ill explain what the buttons do.
 Use these Scripts at your own Descretion. They might break your shit.
 
-"Rename Bones"
+"Rename Bones"/n
 This one will only work if your in Edit Mode on the Armature if not it will just Error so yeah and it does exactly what the name entails to a preset set of names. (Not really important but I like it)
 
 "Setup Shapekeys"
