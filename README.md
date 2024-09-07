@@ -1,6 +1,6 @@
 Hello
 
-Alot of these just cause me being bored honestly just dont question it.
+Alot of this was just cause of me being bored. Honestly just dont question it.
 
 The Scripts inside Stuff arent really prefect ill explain what the buttons do
 Use these Scripts at your own Descretion. They might break your shit.
