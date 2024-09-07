@@ -1,7 +1,7 @@
 bl_info = {
     "name": "PickYourFriend's Useful Script",
     "author": "Me",
-    "version": (1, 1, 0),
+    "version": (1, 2, 0),
     "blender": (3, 3, 1),
     "location": "3D View > Sidebar > PickYourFriend",
     "description": "Renames the bones, manages shape keys, and updates materials.",
@@ -90,6 +90,15 @@ def rename_bones(context):
 def manage_shape_keys(context):
     obj = context.object
     
+    # Check if there are any shape keys with "vrc" in their name
+    vrc_shape_key_exists = any("vrc" in key.name for key in bpy.data.shape_keys["Key.001"].key_blocks)
+
+    if vrc_shape_key_exists:
+        # Remove shape keys starting from index 35, 18 times
+        bpy.context.object.active_shape_key_index = 35
+        for _ in range(18):
+            bpy.ops.object.shape_key_remove(all=False)
+
     def create_shape_key_from_mix(shape_key_name, shape_key_value_dict):
         for key_name, value in shape_key_value_dict.items():
             bpy.data.shape_keys["Key.001"].key_blocks[key_name].value = value
@@ -207,7 +216,7 @@ def update_materials():
     bpy.ops.object.select_all(action='DESELECT')
 
 class RenameBonesOperator(bpy.types.Operator):
-    """Renames bones in the selected object"""
+    """Renames bones in the selected object if in edit mode"""
     bl_idname = "object.rename_bones_operator"
     bl_label = "Rename Bones"
 
@@ -216,7 +225,7 @@ class RenameBonesOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class ShapeKeyManagerOperator(bpy.types.Operator):
-    """Creates and manages shape keys"""
+    """Creates and setups shape keys"""
     bl_idname = "object.shape_key_manager_operator"
     bl_label = "Generate Shape Keys"
 
@@ -242,8 +251,8 @@ class VIEW3D_PT_my_custom_panel(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         layout.operator("object.rename_bones_operator", text="Rename Bones")
-        layout.operator("object.shape_key_manager_operator", text="Manage Shape Keys")
-        layout.operator("object.update_materials_operator", text="Set Materials")
+        layout.operator("object.shape_key_manager_operator", text="Setup Shapekeys")
+        layout.operator("object.update_materials_operator", text="Setup Materials")
 
 def register():
     bpy.utils.register_class(RenameBonesOperator)
