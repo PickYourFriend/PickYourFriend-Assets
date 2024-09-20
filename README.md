@@ -12,6 +12,6 @@ This one will only work if your in Edit Mode on the Armature if not it will just
 Make sure "Face" Mesh is selected the Shapekey data property is named "Key.001" or it just wont work. Also it might break if used on already existing vrc shapekeys exist so... yeah Warned ya.<br />
 
 "Setup Materials"<br />
-Just sets the materials to Background Shader and sets the Alpha to none thats it :).<br />
+Just sets the materials Alpha to none thats it :).<br />
 
 Alot of the things here are Mainly for VRC avatars so if your trying to use these for anything else. GL i say.<br />
