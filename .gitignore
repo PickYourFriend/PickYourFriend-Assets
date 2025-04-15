@@ -1,5 +1,2 @@
-Generate Emote Names.py
-Rename Emotes.py
-Setup Emotes.py
-Organize Files.py
-genshin_emote_renames.txt
+*.py
+*.txt
